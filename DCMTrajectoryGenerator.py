@@ -33,12 +33,8 @@ class DCMTrajectoryGenerator:
     
     def planDCMTrajectory(self,time): #The output of this function is DCM posiiton
         #todo: use the equation 9 of the project description
-        self.DCM = 
+        self.DCM =
         pass
 
-    
-
-
-    
 
 
