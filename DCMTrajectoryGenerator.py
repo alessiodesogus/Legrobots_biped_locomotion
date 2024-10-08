@@ -28,7 +28,7 @@ class DCMTrajectoryGenerator:
         #todo: use equation (3) in the project description
         self.CoMDot = self.omega * (self.CoM - self.DCM) 
         #todo: Simple euler numerical integration (find CoM position from CoM velocity)
-        self.CoM = self.CoM + self.CoMDot * self.timeStep
+        self.CoM = self.CoM + self.CoMDotPrev * self.timeStep
         self.CoMDotPrev=self.CoMDot
         return self.CoM
 
