@@ -26,7 +26,7 @@ class DCMTrajectoryGenerator:
     def getCoM(self):
         #This function generates the CoM trajectory by integration of CoM velocity(that has been found by the DCM values)
         #todo: use equation (3) in the project description
-        self.CoMDot = self.omega * (self.CoM - self.DCM) 
+        self.CoMDot = self.omega * (self.DCM - self.CoM) 
         #todo: Simple euler numerical integration (find CoM position from CoM velocity)
         self.CoM = self.CoM + self.CoMDotPrev * self.timeStep
         self.CoMDotPrev=self.CoMDot
